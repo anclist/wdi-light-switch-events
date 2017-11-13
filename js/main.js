@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
       offState = 'off';
 
 
-      button.addEventListener('click', function(e) {
+      button.addEventListener('click', function() {
         if (button.classList.contains(onState)) {
           room.className = "dark";
           button.classList.replace( onState, offState );
-          message.innerText = 'It\'s quite dark in here';
+          message.innerText = 'Hey, who turned off the lights?';
         } else {
           room.className = "light";
           button.classList.replace( offState, onState );
